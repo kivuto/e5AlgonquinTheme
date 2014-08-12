@@ -1,0 +1,404 @@
+/*SCSS ELEMENTS*/
+$MainFont: Tahoma, Geneva, sans-serif;
+$TitleFont: "Century Gothic", CenturyGothic, AppleGothic, "Muli", sans-serif !important;
+$MainFontColor : #444;
+$LightFontColor: #767676;
+$MediumFontColor: #656565;
+
+$MainLinkColor : #767676;
+$MainLinkHover : #333;
+
+$HeaderAccent :  #2c8741;
+$SecondAccent : #E1E1E2;
+$SecondAccentHover : #888;
+$NavFontActive : #fff;
+$NavFontInActive : #000;
+$NavFontInActiveHover : #FFF;
+
+$ButtonColour : #4A4A4A;
+$ButtonHover : #333;
+$LargeButtonColour : #767676;
+
+$ButtonGreen : #00892e;
+$ButtonRed : #B33;
+
+$MessageColour: #888;
+
+$ContentBack : #fff;
+$MainBack : #fff;
+$WidgetBack : #fff;
+
+body{
+	background: $MainBack;
+
+	a, a:visited, a:hover, li, p, div, h1{
+			font-family: $MainFont !important;
+			text-decoration: none;
+	}
+}
+.TestBanner{
+	height:initial;
+	padding:2px;
+	font-size:85%;
+}
+
+#contentHeading{
+	width:100%;
+}
+
+#content{
+	width:960px;
+}
+
+#JavaScriptEnabled, #ctl00_divWebStoreMaster, #mainSpacer, html>body #wrapper{
+	height: 100%;
+}
+
+#mainSpacer{
+	background: $ContentBack;
+}
+
+/*HEADER*/
+
+.HeaderText{
+	width:100%;
+	color: $MainFontColor;
+	margin-top: 15px;
+	
+	a, a:visited{
+		color: $MainLinkColor;
+	}
+}
+
+#header_container{
+	width:100%;
+
+	img{
+		width:100%;
+	}
+}
+
+.SearchContainer{
+
+	position:relative;
+	top:-100px;
+	border:none !important;
+
+	.SearchTextBox{
+		color: #aaa;
+		width: 215px;
+	}
+
+	.SearchPanel{
+		padding:5px;
+		float:right;
+		width: 250px;
+		border: 1px solid #CCC;
+		background: #fff;
+	}
+}
+
+.WelcomeMessage{
+		margin:0 100px 30px 100px;
+}
+
+.NavigationMenuItem{
+	border-bottom:none;
+	border-right:5px solid $ContentBack;
+	border-left:none;
+	background: $SecondAccent;
+	font-size:12pt;
+	padding: 10px 0px 10px 0px;
+	a, a:visited{color: $NavFontInActive;}
+}
+
+.NavigationChildMenu{
+	background: $HeaderAccent;
+	width: inherit;
+	margin-bottom:10px;
+	padding: 10px;
+}
+
+.NavigationMenuItem:hover{
+	a, a:visited{color:$NavFontInActiveHover;}
+	background: $SecondAccentHover;
+}
+
+.NavigationMenuItemSelected{
+	padding: 10px 0px 10px 0px;
+	font-size:12pt;
+	border-right:5px solid $ContentBack;
+	background-color: $HeaderAccent !important;
+}
+
+.NavigationChildMenuSpacer{
+	height:10px;
+	margin-bottom:10px;
+	background-color: $HeaderAccent !important;
+}
+
+/*MAIN*/
+
+.SessionSelection{
+	margin: 15px 0 15px 0; 
+
+	select{
+		border: 1px solid $ButtonGreen;
+		padding:5px;
+		font-size: 14pt;
+		color:$LightFontColor;
+	}
+}
+
+.SessionEnrollments{
+	margin-bottom: 50px;
+	overflow: auto;
+
+	li{
+		//display: inline-block;
+	}
+	ul{
+		padding: 0;
+	}
+
+	.SessionEnrollmentClassItem{
+		margin-bottom: 10px;
+	}
+
+	.SessionEnrollmentClass{
+		font-weight: bold;
+		overflow: hidden;
+
+		ul{
+			margin-left:150px;
+			margin-top:-16px;
+		}
+	}
+	.SessionEnrollmentItem{
+		font-weight: normal;
+		display: inline;
+	}
+}
+
+.grid{
+	overflow: auto;
+}
+.CategoryList{
+	width: 20%;
+	float:left;
+
+	.CategoryItem{
+		padding-bottom:15px;
+		a, a:visited{
+			text-decoration:none;
+			font-size: 14pt;
+			color: $MainFontColor;
+		}
+		a:hover{
+			color: $MainLinkHover;
+		}
+	}
+	.Selected 
+	{	a, a:visited{
+			color: $ButtonGreen;
+		}
+	}
+	.ResourcePageCartLink{
+		.ResourcePageCartText{
+			color:$MainFontColor;
+			font-size: 11pt;
+		}
+
+		img{
+			padding-right:5px;
+		}
+	}
+}
+
+.ResourceList{
+	width: 80%;
+	float: left;
+
+	.ResourceCategoriesHeader{
+		margin-bottom:10px; 
+		font-size:115%; 
+		color:$MessageColour; 
+	}
+
+	.ResourceCategoryName{
+		font-size: 14pt;
+		color: $MainFontColor;
+		padding: 25px 0px 25px 0px;
+	}
+
+	.ResourceGroupName{
+		font-size: 16pt;
+		color: $MainFontColor;
+	}
+
+	.ResourceGroupHeader{
+		margin-bottom: 40px;
+		background: #f8f8f8;
+		padding: 10px;
+	}
+
+	.ResourceGroupMessage{
+		padding-top:5px;
+		color: $MediumFontColor;
+	}
+
+	.ResourceGroupRow{
+		overflow: auto;
+	}
+	.Resource{
+		width: 50%;
+		float:left;
+		margin: 0px 0px 60px 0px;
+		padding: 0;
+
+		.ResourceRecommendation{
+			font-size: 12pt;
+			margin-bottom: 10px;
+		}
+		.ResourceImageContainer{
+			width: 24% !important;
+			padding:0;
+			float: left;
+			
+			img{
+				width: 100% !important;
+				height: 100% !important;
+			}
+		}
+
+		.ResourceDetails{
+			//width: 70%;
+			display: inline-block;
+			padding: 0px 12% 0px 4%;
+
+			.ResourceName{
+				font-size:110%;
+				font-weight: bold;
+				color: $MainFontColor;
+				padding-bottom:5px;
+			}
+			.ResourceCourse, .ResourceRequirement{
+				color: $LightFontColor;
+				display: block;
+
+				ul {
+					margin:5px;
+					display: inline-block;
+					padding: 0;
+
+					.ResourceCourseUserGroup{
+						display: inline;
+					}
+				}
+			}
+
+			.ResourceOffering{
+				font-size: 85%;
+				width:100%;
+				float:left;
+				margin-top:10px;
+				position:relative;
+
+				.OfferingDescriptor{
+					font-weight:bold;
+					color: $MainFontColor;
+					padding-right: 4%;
+					float:left;
+					width:46%;
+				}
+
+				.OfferingPrice{
+					color: $MainFontColor;
+					float:left;
+					font-size: 110%;
+					width:25%;
+				}
+			}
+			.ResourceButton{
+				width: 25%;
+				float:right;
+			}
+		}
+	}
+
+	.ResourceButton{
+		font-family: $TitleFont;
+		background: $ButtonColour;
+		color: #fff;
+		text-decoration:none;
+		text-align: center;
+		padding: 5px 0px 5px 0px;
+	}
+
+	.AllFreeResourceButton{
+		background: $LargeButtonColour;
+		font-size: 120%;
+		padding: 5px 0px 5px 0px;
+		display: block;
+		width: 50%;;
+		margin-bottom: 10px;
+	}
+
+	.ResourceButton:hover{
+		background: $ButtonHover;
+	}
+
+	.ResourceInCart{
+		background: $ButtonGreen;
+	}
+	.ResourceInCart:hover{
+		background: $ButtonRed;
+	}
+}
+
+.ui-widget-content{
+	background: $WidgetBack;
+	color: $MainFontColor;
+	border: none;
+	
+	a, a:visited{
+		color: $MainLinkColor;
+	}
+}
+
+.ui-widget-header{
+	background: none;
+	color: $NavFontInActive;
+}
+.ui-tabs .ui-tabs-panel{
+	border: 1px solid #aaaaaa;
+	border-radius: 4px;
+}
+.ContentSectionWrapper{
+	background: none;
+	margin-bottom: 30px;
+}
+
+td.ui-widget-header{
+	background: $WidgetBack;
+}
+
+/*SHOPPING CART*/
+
+.AddOnOfferingTable{
+	width: 100%;
+}
+
+/*FOOTER*/
+
+#footer{
+	margin-top: 20px;
+
+	a, a:visited{
+		color: $MainLinkColor;
+	}
+
+	.FooterText{
+		font-size: 8pt;
+	}
+}

@@ -1,0 +1,263 @@
+/*SCSS ELEMENTS*/
+body {
+  background: white; }
+  body a, body a:visited, body a:hover, body li, body p, body div, body h1 {
+    font-family: Tahoma, Geneva, sans-serif !important;
+    text-decoration: none; }
+
+.TestBanner {
+  height: initial;
+  padding: 2px;
+  font-size: 85%; }
+
+#contentHeading {
+  width: 100%; }
+
+#content {
+  width: 960px; }
+
+#JavaScriptEnabled, #ctl00_divWebStoreMaster, #mainSpacer, html > body #wrapper {
+  height: 100%; }
+
+#mainSpacer {
+  background: white; }
+
+/*HEADER*/
+.HeaderText {
+  width: 100%;
+  color: #444444;
+  margin-top: 15px; }
+  .HeaderText a, .HeaderText a:visited {
+    color: #767676; }
+
+#header_container {
+  width: 100%; }
+  #header_container img {
+    width: 100%; }
+
+.SearchContainer {
+  position: relative;
+  top: -100px;
+  border: none !important; }
+  .SearchContainer .SearchTextBox {
+    color: #aaa;
+    width: 215px; }
+  .SearchContainer .SearchPanel {
+    padding: 5px;
+    float: right;
+    width: 250px;
+    border: 1px solid #CCC;
+    background: #fff; }
+
+.WelcomeMessage {
+  margin: 0 100px 30px 100px; }
+
+.NavigationMenuItem {
+  border-bottom: none;
+  border-right: 5px solid white;
+  border-left: none;
+  background: #e1e1e2;
+  font-size: 12pt;
+  padding: 10px 0px 10px 0px; }
+  .NavigationMenuItem a, .NavigationMenuItem a:visited {
+    color: black; }
+
+.NavigationChildMenu {
+  background: #2c8741;
+  width: inherit;
+  margin-bottom: 10px;
+  padding: 10px; }
+
+.NavigationMenuItem:hover {
+  background: #888888; }
+  .NavigationMenuItem:hover a, .NavigationMenuItem:hover a:visited {
+    color: white; }
+
+.NavigationMenuItemSelected {
+  padding: 10px 0px 10px 0px;
+  font-size: 12pt;
+  border-right: 5px solid white;
+  background-color: #2c8741 !important; }
+
+.NavigationChildMenuSpacer {
+  height: 10px;
+  margin-bottom: 10px;
+  background-color: #2c8741 !important; }
+
+/*MAIN*/
+.SessionSelection {
+  margin: 15px 0 15px 0; }
+  .SessionSelection select {
+    border: 1px solid #00892e;
+    padding: 5px;
+    font-size: 14pt;
+    color: #767676; }
+
+.SessionEnrollments {
+  margin-bottom: 50px;
+  overflow: auto; }
+  .SessionEnrollments ul {
+    padding: 0; }
+  .SessionEnrollments .SessionEnrollmentClassItem {
+    margin-bottom: 10px; }
+  .SessionEnrollments .SessionEnrollmentClass {
+    font-weight: bold;
+    overflow: hidden; }
+    .SessionEnrollments .SessionEnrollmentClass ul {
+      margin-left: 150px;
+      margin-top: -16px; }
+  .SessionEnrollments .SessionEnrollmentItem {
+    font-weight: normal;
+    display: inline; }
+
+.grid {
+  overflow: auto; }
+
+.CategoryList {
+  width: 20%;
+  float: left; }
+  .CategoryList .CategoryItem {
+    padding-bottom: 15px; }
+    .CategoryList .CategoryItem a, .CategoryList .CategoryItem a:visited {
+      text-decoration: none;
+      font-size: 14pt;
+      color: #444444; }
+    .CategoryList .CategoryItem a:hover {
+      color: #333333; }
+  .CategoryList .Selected a, .CategoryList .Selected a:visited {
+    color: #00892e; }
+  .CategoryList .ResourcePageCartLink .ResourcePageCartText {
+    color: #444444;
+    font-size: 11pt; }
+  .CategoryList .ResourcePageCartLink img {
+    padding-right: 5px; }
+
+.ResourceList {
+  width: 80%;
+  float: left; }
+  .ResourceList .ResourceCategoriesHeader {
+    margin-bottom: 10px;
+    font-size: 115%;
+    color: #888888; }
+  .ResourceList .ResourceCategoryName {
+    font-size: 14pt;
+    color: #444444;
+    padding: 25px 0px 25px 0px; }
+  .ResourceList .ResourceGroupName {
+    font-size: 16pt;
+    color: #444444; }
+  .ResourceList .ResourceGroupHeader {
+    margin-bottom: 40px;
+    background: #f8f8f8;
+    padding: 10px; }
+  .ResourceList .ResourceGroupMessage {
+    padding-top: 5px;
+    color: #656565; }
+  .ResourceList .ResourceGroupRow {
+    overflow: auto; }
+  .ResourceList .Resource {
+    width: 50%;
+    float: left;
+    margin: 0px 0px 60px 0px;
+    padding: 0; }
+    .ResourceList .Resource .ResourceRecommendation {
+      font-size: 12pt;
+      margin-bottom: 10px; }
+    .ResourceList .Resource .ResourceImageContainer {
+      width: 24% !important;
+      padding: 0;
+      float: left; }
+      .ResourceList .Resource .ResourceImageContainer img {
+        width: 100% !important;
+        height: 100% !important; }
+    .ResourceList .Resource .ResourceDetails {
+      display: inline-block;
+      padding: 0px 12% 0px 4%; }
+      .ResourceList .Resource .ResourceDetails .ResourceName {
+        font-size: 110%;
+        font-weight: bold;
+        color: #444444;
+        padding-bottom: 5px; }
+      .ResourceList .Resource .ResourceDetails .ResourceCourse, .ResourceList .Resource .ResourceDetails .ResourceRequirement {
+        color: #767676;
+        display: block; }
+        .ResourceList .Resource .ResourceDetails .ResourceCourse ul, .ResourceList .Resource .ResourceDetails .ResourceRequirement ul {
+          margin: 5px;
+          display: inline-block;
+          padding: 0; }
+          .ResourceList .Resource .ResourceDetails .ResourceCourse ul .ResourceCourseUserGroup, .ResourceList .Resource .ResourceDetails .ResourceRequirement ul .ResourceCourseUserGroup {
+            display: inline; }
+      .ResourceList .Resource .ResourceDetails .ResourceOffering {
+        font-size: 85%;
+        width: 100%;
+        float: left;
+        margin-top: 10px;
+        position: relative; }
+        .ResourceList .Resource .ResourceDetails .ResourceOffering .OfferingDescriptor {
+          font-weight: bold;
+          color: #444444;
+          padding-right: 4%;
+          float: left;
+          width: 46%; }
+        .ResourceList .Resource .ResourceDetails .ResourceOffering .OfferingPrice {
+          color: #444444;
+          float: left;
+          font-size: 110%;
+          width: 25%; }
+      .ResourceList .Resource .ResourceDetails .ResourceButton {
+        width: 25%;
+        float: right; }
+  .ResourceList .ResourceButton {
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, "Muli", sans-serif !important;
+    background: #4a4a4a;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 0px 5px 0px; }
+  .ResourceList .AllFreeResourceButton {
+    background: #767676;
+    font-size: 120%;
+    padding: 5px 0px 5px 0px;
+    display: block;
+    width: 50%;
+    margin-bottom: 10px; }
+  .ResourceList .ResourceButton:hover {
+    background: #333333; }
+  .ResourceList .ResourceInCart {
+    background: #00892e; }
+  .ResourceList .ResourceInCart:hover {
+    background: #bb3333; }
+
+.ui-widget-content {
+  background: white;
+  color: #444444;
+  border: none; }
+  .ui-widget-content a, .ui-widget-content a:visited {
+    color: #767676; }
+
+.ui-widget-header {
+  background: none;
+  color: black; }
+
+.ui-tabs .ui-tabs-panel {
+  border: 1px solid #aaaaaa;
+  border-radius: 4px; }
+
+.ContentSectionWrapper {
+  background: none;
+  margin-bottom: 30px; }
+
+td.ui-widget-header {
+  background: white; }
+
+/*SHOPPING CART*/
+.AddOnOfferingTable {
+  width: 100%; }
+
+/*FOOTER*/
+#footer {
+  margin-top: 20px; }
+  #footer a, #footer a:visited {
+    color: #767676; }
+  #footer .FooterText {
+    font-size: 8pt; }
