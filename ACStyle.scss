@@ -2,7 +2,7 @@
 $MainFont: Tahoma, Geneva, sans-serif;
 $TitleFont: "Century Gothic", CenturyGothic, AppleGothic, "Muli", sans-serif !important;
 $MainFontColor : #444;
-$LightFontColor: #767676;
+$LightFontColor: #707070; 
 $MediumFontColor: #656565;
 
 $MainLinkColor : #767676;
@@ -21,8 +21,6 @@ $LargeButtonColour : #767676;
 
 $ButtonGreen : #00892e;
 $ButtonRed : #B33;
-
-$MessageColour: #888;
 
 $ContentBack : #fff;
 $MainBack : #fff;
@@ -151,7 +149,7 @@ body{
 }
 
 .SessionEnrollments{
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 	overflow: auto;
 
 	li{
@@ -222,7 +220,7 @@ body{
 	.ResourceCategoriesHeader{
 		margin-bottom:10px; 
 		font-size:115%; 
-		color:$MessageColour; 
+		color:$LightFontColor; 
 	}
 
 	.ResourceCategoryName{
@@ -354,6 +352,13 @@ body{
 	.ResourceInCart:hover{
 		background: $ButtonRed;
 	}
+}
+
+.ResourceValidationMessage {
+	background: url("images/ui-bg_glass_95_fef1ec_1x400.png") repeat-x scroll 50% 50% #fef1ec;
+    border: 1px solid #cd0a0a;
+    color: #cd0a0a;
+	padding: 5px;
 }
 
 .ui-widget-content{
