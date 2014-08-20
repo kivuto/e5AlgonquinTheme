@@ -175,6 +175,11 @@ body{
 	.SessionEnrollmentItem{
 		font-weight: normal;
 		display: inline;
+		
+		.SessionEnrollmentCode {
+			font-size: 85%;
+			color:$LightFontColor; 
+		}
 	}
 }
 

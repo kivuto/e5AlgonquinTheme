@@ -109,6 +109,9 @@ body {
   .SessionEnrollments .SessionEnrollmentItem {
     font-weight: normal;
     display: inline; }
+    .SessionEnrollments .SessionEnrollmentItem .SessionEnrollmentCode {
+      font-size: 85%;
+      color: #707070; }
 
 .grid {
   overflow: auto; }
