@@ -28,7 +28,7 @@ body {
   color: #444444;
   margin-top: 15px; }
   .HeaderText a, .HeaderText a:visited {
-    color: #767676; }
+    color: #448844; }
 
 #header_container {
   width: 100%; }
@@ -198,10 +198,13 @@ body {
         position: relative; }
         .ResourceList .Resource .ResourceDetails .ResourceOffering .OfferingDescriptor {
           font-weight: bold;
-          color: #444444;
+          color: #448844;
           padding-right: 4%;
           float: left;
           width: 46%; }
+        .ResourceList .Resource .ResourceDetails .ResourceOffering .OfferingDescriptor:hover {
+          text-decoration: underline;
+          color: #333333; }
         .ResourceList .Resource .ResourceDetails .ResourceOffering .OfferingPrice {
           color: #444444;
           float: left;
@@ -242,7 +245,10 @@ body {
   color: #444444;
   border: none; }
   .ui-widget-content a, .ui-widget-content a:visited {
-    color: #767676; }
+    color: #448844; }
+  .ui-widget-content a:hover {
+    text-decoration: underline;
+    color: #333333; }
 
 .ui-widget-header {
   background: none;
@@ -267,6 +273,6 @@ td.ui-widget-header {
 #footer {
   margin-top: 20px; }
   #footer a, #footer a:visited {
-    color: #767676; }
+    color: #448844; }
   #footer .FooterText {
     font-size: 8pt; }

@@ -5,7 +5,7 @@ $MainFontColor : #444;
 $LightFontColor: #707070; 
 $MediumFontColor: #656565;
 
-$MainLinkColor : #767676;
+$MainLinkColor : #448844;
 $MainLinkHover : #333;
 
 $HeaderAccent :  #2c8741;
@@ -309,10 +309,14 @@ body{
 
 				.OfferingDescriptor{
 					font-weight:bold;
-					color: $MainFontColor;
+					color: $MainLinkColor;
 					padding-right: 4%;
 					float:left;
 					width:46%;
+				}
+				.OfferingDescriptor:hover{
+					text-decoration: underline;
+					color: $MainLinkHover;
 				}
 
 				.OfferingPrice{
@@ -373,6 +377,11 @@ body{
 	
 	a, a:visited{
 		color: $MainLinkColor;
+	}
+
+	a:hover{
+		text-decoration: underline;
+		color: $MainLinkHover;
 	}
 }
 
